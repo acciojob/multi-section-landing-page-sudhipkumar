@@ -3,32 +3,67 @@
 <html>
 
 <head>
+	 <title>Example To-Do App</title>
 	<link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
-	<div class="form-container">
-    <form id="contactForm" method="POST" novalidate>
-      <h2>Contact Us</h2>
+	 <!-- Header with Logo and Navigation -->
+  <header>
+    <img src="logo.png" alt="Website Logo" id="logo" />
+    <nav>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-      <label for="fullName">Full Name*</label>
-      <input type="text" id="fullName" name="fullName" required />
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="background-image" style="background-image: url('hero.jpg'); height: 300px;">
+      <h1>Welcome to Our To-Do App</h1>
+    </div>
+  </section>
 
-      <label for="email">Email Address*</label>
-      <input type="email" id="email" name="email" required />
+  <!-- Our Work Section -->
+  <section class="our-work" id="work">
+    <h2 class="title">Our Work</h2>
+    <div class="images">
+      <img src="work1.jpg" alt="Work 1" />
+      <img src="work2.jpg" alt="Work 2" />
+      <img src="work3.jpg" alt="Work 3" />
+      <img src="work4.jpg" alt="Work 4" />
+    </div>
+  </section>
 
-      <label for="phone">Phone Number</label>
-      <input type="tel" id="phone" name="phone" placeholder="123-456-7890" />
+  <!-- Features and Services -->
+  <section class="features" id="features">
+    <h2 class="title">Features & Services</h2>
+    <ul>
+      <li>Fast and Reliable</li>
+      <li>Cross-platform</li>
+      <li>Easy to Use</li>
+    </ul>
+  </section>
 
-      <label for="message">Message*</label>
-      <textarea id="message" name="message" rows="5" required minlength="100"></textarea>
+  <!-- Customer Reviews -->
+  <section class="reviews">
+    <h2 class="title">What Our Customers Say</h2>
+    <blockquote>"This app changed how I organize my day!" - User A</blockquote>
+  </section>
 
-      <button type="submit">Submit</button>
-      <p id="formFeedback" class="feedback"></p>
+  <!-- Newsletter Section -->
+  <section class="contact" id="contact">
+    <h2 class="title">Join Our Newsletter</h2>
+    <form>
+      <input type="email" placeholder="Enter your email" required />
+      <button type="submit">Subscribe</button>
     </form>
-  </div>
-
+  </section>
     <script type="text/javascript" src="./script.js">
 </script>
 
